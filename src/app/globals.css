@@ -12,6 +12,25 @@
   --font-mono: var(--font-geist-mono);
 }
 
+.mocha {
+  --background: #1e1e2e;
+  --foreground: #cdd6f4;
+  --color-white: #1e1e2e;
+  --color-gray-50: #11111b;
+  --color-gray-100: #181825;
+  --color-gray-200: #313244;
+  --color-gray-300: #45475a;
+  --color-gray-500: #a6adc8;
+  --color-gray-600: #bac2de;
+  --color-gray-700: #bac2de;
+  --color-gray-800: #cdd6f4;
+  --color-gray-900: #cdd6f4;
+  --color-indigo-500: #cba6f7;
+  --color-indigo-600: #cba6f7;
+  --color-indigo-800: #b4befe;
+  --color-purple-600: #f5c2e7;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
