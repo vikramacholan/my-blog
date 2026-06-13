@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { fetchEntries } from '@/lib/contentful';
 import { TypeBlogPostSkeleton } from '@/types/contentful';
+import ThemeSwitcher from './ThemeSwitcher';
 
 export default async function BlogSidebar() {
   // Fetch blog posts sorted by publishDate descending
@@ -10,8 +11,9 @@ export default async function BlogSidebar() {
   });
 
   return (
-    <aside className="w-full lg:w-96 flex-shrink-0 bg-white border-l border-gray-200 overflow-y-auto h-full">
+    <aside className="w-full lg:w-96 flex-shrink-0 bg-white border-t lg:border-t-0 lg:border-l border-gray-200 lg:overflow-y-auto lg:h-full">
       <div className="p-6">
+        <ThemeSwitcher />
         <h2 className="text-xl font-bold text-gray-900 mb-6">All Posts</h2>
         <div className="space-y-6">
           {posts.map((post) => {
