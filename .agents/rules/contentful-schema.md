@@ -1,3 +1,7 @@
+---
+trigger: model_decision
+---
+
 # Contentful Schema Definition
 
 This document outlines the schema models that need to be configured in the Contentful UI.
